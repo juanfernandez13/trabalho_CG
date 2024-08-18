@@ -2,6 +2,7 @@ import numpy as np
 def curvaHermite(P0, T0, P1, T1, num_points):
     points = []
 
+    #intera sobre pontos de 0 a 1
     for t in np.linspace(0, 1, num_points):
         H1 = 2 * t ** 3 - 3 * t ** 2 + 1  # P0
         H2 = t ** 3 - 2 * t ** 2 + t  # T0

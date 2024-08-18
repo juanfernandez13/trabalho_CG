@@ -1,6 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from general import normalizer, scale_for_resolution, plot_points
 def midpoint_algorithm(p1, p2):
     if p1[0] > p2[0] or p1[1] > p2[1]:
         p1, p2 = p2, p1
@@ -30,11 +27,3 @@ def midpoint_algorithm(p1, p2):
             y1 += 1
 
     return points
-
-points = [(1,1), (1,10)]
-resolution = (100,100)
-normaliz = normalizer(points)
-scale = scale_for_resolution(normaliz, resolution)
-mid = midpoint_algorithm(scale[0], scale[1])
-#plot_points(mid, resolution)
-

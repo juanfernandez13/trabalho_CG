@@ -13,8 +13,8 @@ def curvaHermite(P0, T0, P1, T1, numeroDePontos):
 
         x = H1 * P0[0] + H2 * T0[0] + H3 * P1[0] + H4 * T1[0]
         y = H1 * P0[1] + H2 * T0[1] + H3 * P1[1] + H4 * T1[1]
-        x_round = round(x)
-        y_round = round(y)
+        x_round = x
+        y_round = y
         pontos.append((x_round, y_round))
     return pontos
 
@@ -32,7 +32,7 @@ for i in range(1,len(ce)):
    ne += midpoint_algorithm(ce[i-1], ce[i])
 
 
-plot_points(ne, resolution)
+#plot_points(ne, resolution)
 
 
 

@@ -36,5 +36,5 @@ resolution = (100,100)
 normaliz = normalizer(points)
 scale = scale_for_resolution(normaliz, resolution)
 mid = midpoint_algorithm(scale[0], scale[1])
-plot_points(mid, resolution)
+#plot_points(mid, resolution)
 
